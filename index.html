@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Айвазовский city — квартиры и жилые комплексы</title>
+<meta name="description" content="Онлайн-портфолио Айвазовский city: квартиры, паркинг, кладовые, жилые комплексы и контакты.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#181421;--muted:#6d6679;--lav:#b9a2ff;--lav2:#eadfff;--violet:#7c5cf0;--violet2:#5f46cf;--card:#ffffffdd;--line:#e9e2f2;--bg:#f8f6fb;--dark:#20182e;--shadow:0 22px 60px rgba(53,35,87,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}.site{min-height:100vh}
+.header{position:fixed;z-index:50;top:10px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 32px));display:flex;align-items:center;justify-content:space-between;padding:10px 14px 10px 18px;border:1px solid rgba(255,255,255,.75);background:rgba(255,255,255,.72);backdrop-filter:blur(18px);border-radius:22px;box-shadow:0 12px 38px rgba(43,29,67,.08)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}.brand-mark{width:35px;height:35px;border-radius:11px;background:linear-gradient(135deg,var(--violet),#c9bbff);position:relative;box-shadow:0 8px 20px rgba(124,92,240,.22)}.brand-mark:after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:#fff;right:6px;top:6px}.brand strong{font-size:15px;letter-spacing:.02em}.brand span{display:block;color:var(--muted);font-size:10px;margin-top:1px;letter-spacing:.11em;text-transform:uppercase}.nav{display:flex;gap:4px;align-items:center}.nav button{border:0;background:transparent;padding:11px 13px;border-radius:13px;font:600 12px Manrope;cursor:pointer;color:#4c4655;transition:.25s}.nav button:hover,.nav button.active{background:#f1ebfb;color:#34224a}.nav .contact-btn{background:var(--dark);color:#fff;padding-inline:16px}.nav .contact-btn:hover{background:#2f2241;color:#fff}
+.hero{padding:124px 0 42px}.hero-inner{width:min(1180px,calc(100% - 32px));margin:auto;display:grid;grid-template-columns:1.02fr 1.28fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);background:#fff;border-radius:999px;color:#6c5a87;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--violet);box-shadow:0 0 0 5px #efeaff}.hero h1{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.24em;row-gap:.05em;font-size:clamp(36px,6.6vw,92px);line-height:1.15;letter-spacing:-.02em;margin:14px 0 18px;font-weight:800}.hero h1 em{font-family:'Playfair Display',serif;font-weight:700;color:var(--violet);font-style:normal;letter-spacing:-.01em}.hero p{font-size:17px;line-height:1.65;color:var(--muted);max-width:580px;margin:0}.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.cta{border:0;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:9px;padding:14px 18px;border-radius:15px;font:800 13px Manrope;transition:.25s}.cta.primary{background:var(--dark);color:#fff;box-shadow:0 14px 30px rgba(32,24,46,.16)}.cta.primary:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(32,24,46,.2)}.cta.secondary{background:#fff;color:#322544;border:1px solid var(--line)}.cta.secondary:hover{transform:translateY(-2px);background:#fbf9ff}
+.hero-art{position:relative}.hero-art img{width:100%;display:block;border-radius:34px;box-shadow:var(--shadow);object-fit:cover;aspect-ratio:16/9;filter:saturate(1.18) contrast(1.06) brightness(1.03)}.hero-art:before{content:"";position:absolute;inset:auto auto -24px -18px;width:130px;height:130px;border-radius:32px;background:linear-gradient(145deg,#ded3ff,#fff);z-index:-1}.floating{position:absolute;left:22px;bottom:22px;background:rgba(255,255,255,.84);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.8);padding:13px 15px;border-radius:17px;box-shadow:0 12px 30px rgba(38,27,59,.12);font-size:12px;font-weight:800}.floating span{display:block;color:var(--muted);font-size:10px;font-weight:600;margin-top:3px}
+.section{padding:62px 0}.tab-section.section:not(.hero){padding-top:132px}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}.kicker{color:var(--violet2);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.section h2{font-size:clamp(34px,4.5vw,58px);letter-spacing:-.03em;margin:8px 0 0;line-height:1.1}.section-head p{max-width:450px;color:var(--muted);line-height:1.6;font-size:14px;margin:0}
+.grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 10px 34px rgba(53,35,87,.05)}.gallery-main{position:relative;min-height:410px}.gallery-main img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.1) contrast(1.04) brightness(1.02)}.overlay{position:absolute;inset:auto 18px 18px 18px;display:flex;justify-content:space-between;gap:12px;align-items:end}.overlay .tag{padding:9px 12px;border-radius:13px;background:rgba(32,24,46,.78);color:#fff;font-size:11px;font-weight:800;backdrop-filter:blur(8px)}.side-stack{display:grid;grid-template-rows:1fr 1fr;gap:18px}.side-card{position:relative;min-height:196px}.side-card img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.08) contrast(1.03) brightness(1.02)}.side-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(24,17,34,.64))}.side-label{position:absolute;left:16px;bottom:15px;z-index:2;color:#fff}.side-label b{font-size:17px}.side-label span{display:block;font-size:10px;opacity:.8;margin-top:3px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:24px;background:#fff;border:1px solid var(--line);border-radius:22px;transition:.3s;position:relative;overflow:hidden}.feature:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.feature-num{font-size:11px;font-weight:800;color:#8d7aab}.feature h3{font-size:22px;letter-spacing:-.03em;margin:40px 0 9px}.feature p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}.feature:after{content:"↗";position:absolute;right:18px;top:18px;color:#9d8cb4;font-size:20px}
+.explore{padding-top:30px}.plan{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#ddd}.plan-visual{position:relative;width:100%;will-change:transform}.plan-visual>img{display:block;width:100%;height:auto}.houses-overlay{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none}.houses-svg{position:absolute;left:0;top:0;width:100%;height:100%;display:block;overflow:visible;pointer-events:auto}.houses-svg .house{fill:#fff;fill-opacity:0;stroke:#fff;stroke-width:2;stroke-opacity:0;pointer-events:all;cursor:none;transition:fill-opacity 200ms ease,stroke-opacity 200ms ease,filter 200ms ease}.houses-svg .house:hover{fill-opacity:.4;stroke-opacity:.8;filter:drop-shadow(0 0 4px rgba(255,255,255,.55))}.shade{position:absolute;inset:0;background:rgba(21,15,29,.0);pointer-events:none;transition:.35s}
+.dark-section{background:var(--dark);color:#fff}.dark-section .section h2{color:#fff}.dark-section .section-head p{color:#bfb5ca}.parking-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.dark-card{padding:30px;border-radius:26px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(140deg,rgba(255,255,255,.08),rgba(255,255,255,.03));min-height:260px;position:relative;overflow:hidden}.dark-card .big{font-size:64px;line-height:.9;letter-spacing:-.05em;font-weight:800;color:#dacfff}.dark-card h3{font-size:25px;margin:30px 0 8px}.dark-card p{color:#beb4c8;line-height:1.6;font-size:13px;max-width:440px}.dark-card:after{content:"";position:absolute;right:-40px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(217,207,255,.22)}
+.contact-wrap{display:grid;grid-template-columns:1fr .8fr;gap:20px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:34px}.contact-title{font-family:'Playfair Display',serif;font-size:clamp(45px,7vw,88px);line-height:.9;margin:0 0 22px}.mail{font-size:20px;font-weight:800;color:var(--violet2);word-break:break-word}.tiny{color:var(--muted);line-height:1.7;font-size:13px}.quote{height:100%;min-height:250px;padding:34px;border-radius:26px;background:linear-gradient(140deg,#e9e1ff,#d8ccff);position:relative;overflow:hidden}.quote strong{font-size:36px;letter-spacing:-.04em;display:block;max-width:330px;line-height:1.05}.quote p{color:#625773;line-height:1.65;font-size:13px;max-width:330px;margin-top:16px}.quote:after{content:"“";position:absolute;font-family:Georgia,serif;font-size:220px;line-height:.7;color:rgba(124,92,240,.12);right:-2px;bottom:-24px}
+.footer{padding:38px 0 52px;color:#8d8597;font-size:12px}.footer .wrap{display:flex;justify-content:space-between;gap:20px}
+.tab-section{display:none}.tab-section.active{display:block;animation:fadeUp .42s ease both}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}.reveal{animation:fadeUp .7s ease both}
+@media(max-width:900px){.nav button:not(.contact-btn){display:none}.hero-inner,.grid,.parking-grid,.contact-wrap{grid-template-columns:1fr}.hero{padding-top:112px}.hero-art{order:-1}.section{padding:50px 0}.tab-section.section:not(.hero){padding-top:118px}.feature-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.gallery-main{min-height:320px}}
+@media(max-width:560px){.header{top:8px}.brand span{display:none}.hero p{font-size:15px}.contact-card,.quote,.dark-card{padding:24px}.floating{left:12px;bottom:12px}}
+
+/* MFias-inspired motion layer */
+html{scroll-behavior:auto}
+body{cursor:none}
+a,button{cursor:none}
+.site{position:relative;isolation:isolate;overflow:hidden}
+.site:before,.site:after{content:"";position:fixed;z-index:-1;pointer-events:none;border-radius:50%;filter:blur(2px);opacity:.34;will-change:transform}
+.site:before{width:360px;height:360px;right:-160px;top:18%;background:radial-gradient(circle,rgba(124,92,240,.18),transparent 68%)}
+.site:after{width:280px;height:280px;left:-130px;bottom:8%;background:radial-gradient(circle,rgba(164,128,230,.16),transparent 68%)}
+.kinetic-title{overflow:visible}
+.kinetic-word{display:inline-block;white-space:nowrap;overflow:hidden;vertical-align:bottom;line-height:1.2;padding-bottom:.12em;margin-bottom:-.12em}
+.kinetic-letter{display:inline-block;transform:translate3d(0,115%,0) rotate(5deg);opacity:0;will-change:transform,opacity}
+.hero .kinetic-title .kinetic-letter{transform:translate3d(0,125%,0) rotate(7deg)}
+.hero-art{transform-style:preserve-3d;will-change:transform}
+.hero-art img{will-change:transform;transform:scale(1.03)}
+.floaty{will-change:transform}
+.motion-section{position:relative}
+.reveal-card{will-change:transform,opacity;transform:translate3d(0,24px,0)}
+.card,.feature,.dark-card,.contact-card,.quote{transform-style:preserve-3d}
+.side-card{overflow:hidden}
+.side-card img,.gallery-main img{transition:transform .8s cubic-bezier(.16,1,.3,1);will-change:transform}
+.side-card:hover img,.gallery-main:hover img{transform:scale(1.055)}
+.feature:before,.dark-card:before,.contact-card:before,.quote:before{content:"";position:absolute;inset:-1px;pointer-events:none;border-radius:inherit;background:linear-gradient(120deg,rgba(255,255,255,.35),transparent 35%,transparent 65%,rgba(124,92,240,.10));opacity:0;transition:opacity .45s ease}
+.feature:hover:before,.dark-card:hover:before,.contact-card:hover:before,.quote:hover:before{opacity:1}
+.motion-image{will-change:transform}
+.plan{transform-style:preserve-3d}
+.plan img{will-change:transform}
+.cursor-dot,.cursor-ring,.cursor-address{position:fixed;top:0;left:0;z-index:9999;pointer-events:none;border-radius:50%;transform:translate3d(-50%,-50%,0);mix-blend-mode:multiply}
+.cursor-dot{width:6px;height:6px;background:#6f50c8}
+.cursor-ring{width:34px;height:34px;border:1px solid rgba(111,80,200,.34);transition:width .22s ease,height .22s ease,border-color .22s ease,background .22s ease}
+.cursor-ring.is-hover{width:56px;height:56px;border-color:rgba(111,80,200,.58);background:rgba(111,80,200,.05)}
+.cursor-address{border-radius:10px;padding:8px 11px;background:rgba(255,255,255,.94);color:#34224a;font:700 11px/1.2 Manrope,sans-serif;letter-spacing:.02em;white-space:nowrap;box-shadow:0 8px 24px rgba(38,25,58,.14);opacity:0;visibility:hidden;transform:translate3d(14px,18px,0);transition:opacity .18s ease,visibility .18s ease;mix-blend-mode:normal}
+.cursor-address.is-visible{opacity:1;visibility:visible}
+@media(max-width:900px),(pointer:coarse){
+ body,a,button{cursor:auto}
+ .cursor-dot,.cursor-ring,.cursor-address{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+ .cursor-dot,.cursor-ring,.cursor-address{display:none}
+ .hero-art img,.side-card img,.gallery-main img{transform:none!important}
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+</head>
+<body>
+<div class="site" id="app">
+<header class="header">
+<a class="brand" href="#" onclick="switchTab('home');return false"><span class="brand-mark"></span><strong>Айвазовский city<span>жилой квартал</span></strong></a>
+<nav class="nav" aria-label="Основная навигация">
+<button data-tab="apartments" onclick="switchTab('apartments')">Квартиры</button>
+<button data-tab="parking" onclick="switchTab('parking')">Паркинг</button>
+<button data-tab="storage" onclick="switchTab('storage')">Кладовые</button>
+<button data-tab="why" onclick="switchTab('why')">Почему мы</button>
+<button data-tab="contacts" class="contact-btn" onclick="switchTab('contacts')">Контакты</button>
+</nav></header>
+
+<main>
+<section id="home" class="tab-section active hero">
+<div class="hero-inner wrap reveal motion-scope">
+<div>
+<div class="eyebrow"><i></i> онлайн-портфолио</div>
+<h1 class="kinetic-title">Айвазовский <em>city</em></h1>
+<p>Современное пространство для выбора квартиры и знакомства с жилым кварталом — через архитектуру, общественные зоны и реальные визуализации.</p>
+<div class="cta-row"><button class="cta primary" onclick="switchTab('apartments')">Смотреть квартиры <span>↗</span></button><button class="cta secondary" onclick="scrollToPlan()">Рассмотреть генплан</button></div>
+</div>
+<div class="hero-art parallax-frame"><img src="assets/masterplan.png" alt="Айвазовский city — панорама жилого квартала"><div class="floating floaty">Онлайн-обзор<span>вторая прикрепленная визуализация</span></div></div>
+</div>
+</section>
+
+<section id="apartments" class="tab-section section wrap motion-section">
+<div class="section-head"><div><div class="kicker">01 / Квартиры</div><h2>Архитектура, которую<br>хочется рассматривать.</h2></div><p>Визуальный каталог проекта на основе предоставленных изображений. Переключайтесь между фасадами, двором и общественными пространствами.</p></div>
+<div class="grid">
+<div class="card gallery-main" data-tilt><img src="assets/building-night.png" alt="Фасады жилого комплекса вечером"><div class="overlay"><div class="tag">Фасады / вечер</div><div class="tag">Айвазовский city</div></div></div>
+<div class="side-stack"><div class="card side-card reveal-card" data-tilt><img src="assets/park.png" alt="Парк и общественная зона"><div class="side-label"><b>Парк</b><span>пространство для жизни</span></div></div><div class="card side-card reveal-card" data-tilt><img src="assets/courtyard.png" alt="Двор и прогулочная зона"><div class="side-label"><b>Двор</b><span>комфортная городская среда</span></div></div></div>
+</div>
+<div class="feature-grid" style="margin-top:18px"><div class="feature reveal-card" data-tilt><div class="feature-num">01</div><h3>Выбор через визуал</h3><p>Смотрите на проект целиком: фасады, дворы и благоустройство — без лишнего текста.</p></div><div class="feature reveal-card" data-tilt><div class="feature-num">02</div><h3>Город рядом</h3><p>На генплане можно рассмотреть расположение корпусов, дорог, парковок и общественных зон.</p></div><div class="feature reveal-card" data-tilt><div class="feature-num">03</div><h3>Один понятный интерфейс</h3><p>Все ключевые разделы собраны в одном спокойном и лёгком пространстве.</p></div></div>
+</section>
+
+<section id="parking" class="tab-section section dark-section motion-section">
+<div class="wrap"><div class="section-head"><div><div class="kicker">02 / Паркинг</div><h2>Паркинг без визуального шума.</h2></div><p>Отдельный раздел для быстрого перехода к теме парковочных мест. Числовые данные здесь не выдуманы — блок оставлен как презентационный интерфейс.</p></div>
+<div class="parking-grid"><div class="dark-card reveal-card" data-tilt><div class="big">P</div><h3>Паркинг</h3><p>Рассмотрите организацию территории на генплане и используйте интерактивные точки для знакомства с корпусами и окружением.</p><button class="cta secondary" onclick="switchTab('home');setTimeout(scrollToPlan,50)">Открыть генплан ↗</button></div><div class="dark-card reveal-card" data-tilt><div class="big">24/7</div><h3>Онлайн-просмотр</h3><p>Сайт работает как цифровое портфолио: удобно открыть с телефона, планшета или компьютера и быстро вернуться к нужному разделу.</p></div></div></div>
+</section>
+
+<section id="storage" class="tab-section section wrap motion-section">
+<div class="section-head"><div><div class="kicker">03 / Кладовые</div><h2>Дополнительное<br>пространство.</h2></div><p>Лаконичная презентация для раздела кладовых — без неподтверждённых характеристик и цен.</p></div>
+<div class="contact-wrap"><div class="contact-card reveal-card" data-tilt><div class="kicker">Хранение</div><h3 style="font-size:34px;letter-spacing:-.04em;margin:18px 0 12px">Кладовые как часть понятного сценария жизни.</h3><p class="tiny">Здесь можно размещать актуальные площади, расположение, наличие и стоимость после загрузки реальных данных проекта. Структура уже готова для обновления.</p><div class="cta-row"><button class="cta primary" onclick="switchTab('contacts')">Запросить детали ↗</button></div></div><div class="quote reveal-card" data-tilt><strong>«Всё нужное — на своём месте»</strong><p>Интерфейс специально отделяет дополнительные помещения от квартир, чтобы выбор оставался простым.</p></div></div>
+</section>
+
+<section id="why" class="tab-section section wrap motion-section">
+<div class="section-head"><div><div class="kicker">04 / Почему именно Айвазовский city</div><h2>Не только дом.<br>Целая городская сцена.</h2></div><p>Раздел отвечает на главный вопрос проекта — чем он интересен визуально и по пользовательскому сценарию.</p></div>
+<div class="feature-grid"><div class="feature reveal-card" data-tilt><div class="feature-num">A</div><h3>Архитектура</h3><p>Выразительные фасады и разный ритм корпусов создают цельный, но не однообразный городской силуэт.</p></div><div class="feature reveal-card" data-tilt><div class="feature-num">B</div><h3>Благоустройство</h3><p>На предоставленных рендерах видно большое внимание к озеленению, прогулочным маршрутам и общественным пространствам.</p></div><div class="feature reveal-card" data-tilt><div class="feature-num">C</div><h3>Онлайн-выбор</h3><p>Интерактивный генплан превращает статичное изображение в понятную навигацию по проекту.</p></div></div>
+<div class="card" style="margin-top:18px;padding:30px;background:linear-gradient(135deg,#f1eaff,#fff)"><div class="kicker">Взгляд на проект</div><h3 style="font-size:36px;line-height:1.05;letter-spacing:-.04em;margin:12px 0">Айвазовский city — когда презентация помогает почувствовать место ещё до визита.</h3><p class="tiny">Все ключевые визуалы на сайте взяты из предоставленного вами набора изображений. Новые изображения не генерировались.</p></div>
+</section>
+
+<section id="contacts" class="tab-section section wrap motion-section">
+<div class="contact-wrap"><div class="contact-card reveal-card" data-tilt><div class="kicker">Контакты</div><h2 class="contact-title">КОНТАКТЫ</h2><p class="tiny">Свяжитесь для получения дополнительной информации по проекту.</p><a class="mail" href="mailto:webai.custom@gmail.com">webai.custom@gmail.com</a></div><div class="quote"><div class="kicker" style="color:#674cb1">Айвазовский city</div><strong>Один адрес для вопросов по проекту.</strong><p>Нажмите на почту — откроется ваше почтовое приложение. Раздел «Контакты» всегда доступен из верхней навигации.</p></div></div>
+</section>
+
+<section id="plan" class="section wrap explore motion-section">
+<div class="section-head"><div><div class="kicker">Интерактив</div><h2>Рассмотрите комплекс.</h2></div></div>
+<div class="plan" id="planBox">
+  <div class="plan-visual" id="planVisual">
+    <img src="assets/hover-plan.png" alt="Интерактивный генплан Айвазовский city">
+    <svg class="houses-svg" id="housesOverlay" aria-label="Интерактивные здания генплана" width="100%" height="100%" viewBox="0 0 2000 1125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <style>
+        .house{fill:#fff;fill-opacity:0;stroke:#fff;stroke-width:2;stroke-opacity:0;pointer-events:all;cursor:none;transition:fill-opacity 200ms ease,stroke-opacity 200ms ease,filter 200ms ease;}
+        .house:hover{fill-opacity:.4;stroke-opacity:.8;filter:drop-shadow(0 0 4px rgba(255,255,255,.55));}
+    </style>
+    <g id="Hosues">
+            <path class="house house-1" data-id="house-1" d="M516.655,924.727C593.765,990.427 613.071,1011.441 634.857,1006.356C683.781,994.936 694.076,989.25 822.164,976.173C827.507,892.878 831.764,870.789 804.811,828.96C798.47,819.12 800.251,818.752 801.315,806.678C803.211,785.162 797.633,785.802 799.039,764.518C799.858,752.108 798.507,752.489 795.172,740.786C792.175,730.266 796.828,731.049 797.29,728.335L796.479,718.373L801.466,712.522C777.593,670.276 778.091,668.884 767.127,665.574C756.532,662.376 758.453,654.07 757.999,653.468C740.924,652.251 741.14,650.129 728.634,653.369C713.292,657.345 717.663,662.282 719.181,678.034L709.234,679.722C710.163,742.868 703.947,749.471 700.296,763.698C697.309,754.939 694.322,746.181 691.336,737.422C675.212,737.998 675.607,738.048 659.693,741.545C648.169,672.398 677.342,637.227 655.245,600.091C643.199,579.847 638.553,585.165 615.393,589.359C580.069,595.755 580.529,596.478 542.999,600.547C542.649,571.747 540.501,572.029 525.009,548.017C494.242,554.611 484.565,555.312 429.969,559.803C418.871,773.846 412.377,774.972 423.675,802.421C460.935,892.951 483.547,887.975 520.031,929.566"/>
+            <path class="house house-2" data-id="house-2" d="M886.851,475.626C892.556,473.184 957.655,445.31 958.315,445.462C964.56,446.908 962.665,450.389 1026.345,487.796C1026.044,492.816 1024.287,522.215 1022.769,550.56C1087.158,595.041 1109.611,604.592 1110.732,608.218C1112.937,615.347 1102.727,651.166 1094.163,760.261C1092.914,776.168 1106.631,777.602 1106.912,777.992C1107.765,771.462 1107.372,771.531 1116.315,710.144C1117.108,704.701 1119.12,699.311 1118.75,693.823C1118.512,690.291 1114.795,687.596 1114.557,684.064C1141.418,670.712 1140.993,670.586 1157.413,663.217C1202.522,693.697 1201.532,694.031 1248.307,722.866C1232.949,736.78 1239.277,739.855 1222.655,861.762C1220.102,880.483 1210.207,872.002 1129.249,915.642C1101.762,930.458 1099.812,921.748 1038.898,934.475C1025.711,957.668 1018.879,946.832 985.09,951.646C981.166,952.205 936.761,958.531 935.884,957.466C923.753,942.736 928.293,940.148 823.497,747.074C801.435,706.428 825.897,707.109 869.182,692.373L857.991,693.278C858.442,686.329 858.765,681.357 866.799,606.672C870.509,572.183 860.72,566.217 888.734,545.904L882.719,546.407C881.576,526.625 881.005,526.734 886.761,474.533"/>
+            <path class="house house-3" data-id="house-3" d="M1117.63,589.095C1131.402,512.151 1131.089,487.489 1150.395,348.958C1154.344,320.616 1253.827,282.127 1254.806,349.823C1273.085,339.707 1272.646,339.913 1290.942,330.161C1311.07,343.497 1310.623,343.34 1335.873,357.449C1323.11,430.13 1325.545,430.24 1319.044,473.902C1314.568,503.964 1317.293,506.261 1345.104,524.471C1343.397,536.29 1341.691,548.108 1339.984,559.927C1357.245,549.168 1358.571,544.824 1376.598,555.019C1415.113,576.799 1413.971,577.55 1452.131,601.72C1454.541,605.544 1456.951,609.367 1459.36,613.191C1469.525,562.728 1466.656,557.931 1488.237,548.718C1511.094,538.961 1512.277,544.363 1551.81,568.991C1552.104,569.174 1596.826,594.644 1600.741,596.874C1599.281,604.619 1582.638,692.914 1581.996,693.595C1579.155,696.608 1510.168,729.866 1485.331,743.028C1451.353,761.034 1439.159,771.986 1423.416,779.432C1398.31,765.176 1399.72,763.481 1116.833,589.045"/>
+            <path class="house house-4" data-id="house-4" d="M1461.726,231.03C1494.866,216.334 1537.258,196.998 1537.739,197.17C1539.064,197.643 1538.988,197.73 1565.047,212.882C1569.391,215.408 1576.049,215.74 1578.174,220.293C1579.085,222.245 1539.627,408.32 1541.625,411.944C1541.762,412.193 1585.636,438.689 1586.344,438.072C1588.752,435.971 1599.144,361.963 1600.662,360.089C1600.729,360.006 1641.622,341.837 1641.841,341.848C1645.075,342.01 1644.472,342.596 1681.866,363.448C1683.105,362.15 1681.859,359.506 1683.098,358.207C1699.052,341.478 1710.401,354.9 1711.324,355.286L1709.568,367.833L1716.549,371.8L1716.481,378.936C1723.529,382.795 1730.577,386.655 1737.625,390.515C1733.598,410.143 1733.575,409.61 1729.779,429.253C1738.382,433.312 1832.752,477.837 1835.166,484.313C1835.683,485.699 1815.561,573.083 1814.805,574.228C1806.489,586.824 1675.961,648.98 1663.583,654.875C1661.858,655.696 1640.961,646.152 1599.514,627.409C1606.036,605.571 1618.825,601.699 1600.366,587.866C1592.774,582.177 1516.365,537.71 1509.012,533.43C1501.363,536.199 1501.484,535.591 1476.244,545.334C1416.136,510.85 1418.443,507.853 1357.737,475.119C1390.821,303.448 1374.695,289.694 1414.754,271.781C1427.223,266.205 1426.817,265.891 1444.7,259.454C1458.246,254.578 1453.992,250.574 1461.244,231.875"/>
+    </g>
+</svg>
+
+  </div>
+  <div class="shade"></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="wrap"><div>© Айвазовский city</div><div>Онлайн-портфолио жилого комплекса</div></div></footer>
+</div>
+<script>
+const ids=['home','apartments','parking','storage','why','contacts'];
+let lenis=null;
+let motionReady=false;
+
+function switchTab(id){
+  ids.forEach(x=>document.getElementById(x)?.classList.toggle('active',x===id));
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));
+  window.scrollTo({top:0,behavior:'auto'});
+  history.replaceState(null,'','#'+id);
+  if(motionReady){
+    requestAnimationFrame(()=>{
+      ScrollTrigger.refresh();
+      animateActiveSection(id);
+    });
+  }
+}
+function scrollToPlan(){
+  const el=document.getElementById('plan');
+  if(!el)return;
+  if(lenis) lenis.scrollTo(el,{offset:-40,duration:1.15});
+  else el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function buildKineticWords(el){
+  // Splits text into per-letter spans grouped by whole word, so every
+  // word gets its own overflow-hidden reveal mask and can never be
+  // broken mid-word (no clipped letters, no stray letter on its own line).
+  const wordSpan=word=>{
+    const span=document.createElement('span');
+    span.className='kinetic-word';
+    [...word].forEach(ch=>{
+      const letter=document.createElement('span');
+      letter.className='kinetic-letter';
+      letter.textContent=ch;
+      span.appendChild(letter);
+    });
+    return span;
+  };
+  const fillWithWords=(text,target)=>{
+    text.split(/(\s+)/).forEach(part=>{
+      if(part==='')return;
+      if(/^\s+$/.test(part)) target.appendChild(document.createTextNode(part));
+      else target.appendChild(wordSpan(part));
+    });
+  };
+  const frag=document.createDocumentFragment();
+  [...el.childNodes].forEach(node=>{
+    if(node.nodeType===Node.TEXT_NODE){
+      fillWithWords(node.textContent,frag);
+    }else if(node.nodeType===Node.ELEMENT_NODE){
+      if(node.tagName==='BR'){
+        frag.appendChild(node.cloneNode(true));
+      }else{
+        const wrap=node.cloneNode(false);
+        fillWithWords(node.textContent,wrap);
+        frag.appendChild(wrap);
+      }
+    }
+  });
+  el.replaceChildren(frag);
+}
+
+function animateHeading(el, delay=0){
+  if(!window.gsap || !el)return;
+  const letters=el.querySelectorAll('.kinetic-letter');
+  if(!letters.length)return;
+  gsap.to(letters,{
+    y:0,rotate:0,opacity:1,duration:.82,ease:'power4.out',stagger:.018,delay,
+    overwrite:true
+  });
+}
+
+function animateActiveSection(id){
+  if(!window.gsap)return;
+  const section=document.getElementById(id);
+  if(!section)return;
+  const heading=section.querySelector('h2,h1');
+  if(heading && heading.dataset.motionHeading) animateHeading(heading,.04);
+  const cards=section.querySelectorAll('.reveal-card');
+  if(cards.length){
+    gsap.fromTo(cards,
+      {y:24,opacity:0,scale:.985},
+      {y:0,opacity:1,scale:1,duration:.72,ease:'power3.out',stagger:.055,overwrite:true}
+    );
+  }
+}
+
+function initLenis(){
+  if(!window.Lenis || !window.gsap || !window.ScrollTrigger)return;
+  lenis=new Lenis({
+    duration:1.05,
+    smoothWheel:true,
+    smoothTouch:false,
+    syncTouch:false,
+    wheelMultiplier:.9
+  });
+  lenis.on('scroll',()=>ScrollTrigger.update());
+  gsap.ticker.add(time=>lenis.raf(time*1000));
+  gsap.ticker.lagSmoothing(1000,16);
+}
+
+function initScrollAnimations(){
+  if(!window.gsap || !window.ScrollTrigger)return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  document.querySelectorAll('.section-head h2').forEach((h2)=>{
+    h2.classList.add('kinetic-title');
+    h2.dataset.motionHeading='1';
+    splitLettersForHeading(h2);
+    gsap.set(h2.querySelectorAll('.kinetic-letter'),{y:'110%',rotate:4,opacity:0});
+    gsap.to(h2.querySelectorAll('.kinetic-letter'),{
+      y:0,rotate:0,opacity:1,duration:.8,ease:'power4.out',stagger:.018,
+      scrollTrigger:{trigger:h2,start:'top 88%',once:true}
+    });
+  });
+
+  gsap.fromTo('.hero .hero-art',
+    {y:26,opacity:0,rotateY:6,scale:.985},
+    {y:0,opacity:1,rotateY:0,scale:1,duration:1.15,ease:'power4.out',delay:.12}
+  );
+
+  gsap.to('.hero .hero-art img',{
+    yPercent:-5,scale:1.08,ease:'none',
+    scrollTrigger:{trigger:'#home',start:'top top',end:'bottom top',scrub:1}
+  });
+
+  gsap.to('.floaty',{
+    y:-10,rotation:-1.3,duration:3.6,ease:'sine.inOut',repeat:-1,yoyo:true
+  });
+
+  document.querySelectorAll('.plan-visual').forEach(visual=>{
+    gsap.to(visual,{
+      yPercent:-4,scale:1.045,ease:'none',
+      scrollTrigger:{trigger:'#plan',start:'top bottom',end:'bottom top',scrub:1.15}
+    });
+  });
+
+  document.querySelectorAll('.reveal-card').forEach((el,i)=>{
+    gsap.fromTo(el,{y:28,opacity:0,scale:.98},{
+      y:0,opacity:1,scale:1,duration:.82,ease:'power3.out',delay:(i%5)*.035,
+      scrollTrigger:{trigger:el,start:'top 90%',once:true}
+    });
+  });
+
+  ScrollTrigger.refresh();
+}
+
+function splitLettersForHeading(el){
+  if(el.dataset.motionSplit)return;
+  buildKineticWords(el);
+  el.dataset.motionSplit='1';
+}
+
+function initTilt(){
+  const fine=window.matchMedia('(pointer:fine)').matches;
+  if(!fine || !window.gsap)return;
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    let px=0,py=0,raf=0;
+    const set=()=>{
+      raf=0;
+      gsap.to(card,{
+        rotateX:py*4.5,rotateY:px*4.5,
+        y:Math.max(-3,Math.min(0,(py+px)*1.3)),
+        transformPerspective:900,duration:.32,ease:'power2.out',overwrite:true
+      });
+    };
+    card.addEventListener('pointermove',e=>{
+      const r=card.getBoundingClientRect();
+      px=((e.clientX-r.left)/r.width-.5);
+      py=-((e.clientY-r.top)/r.height-.5);
+      if(!raf)raf=requestAnimationFrame(set);
+    },{passive:true});
+    card.addEventListener('pointerleave',()=>{
+      px=py=0;
+      if(!raf)raf=requestAnimationFrame(set);
+    },{passive:true});
+  });
+}
+
+function initCursor(){
+  if(!window.matchMedia('(pointer:fine)').matches)return;
+  const dot=document.createElement('div');
+  const ring=document.createElement('div');
+  const address=document.createElement('div');
+  dot.className='cursor-dot';ring.className='cursor-ring';address.className='cursor-address';
+  document.body.append(dot,ring,address);
+  let x=innerWidth/2,y=innerHeight/2,rx=x,ry=y,raf=0;
+  window.addEventListener('pointermove',e=>{
+    x=e.clientX;y=e.clientY;
+    if(raf)return;
+    raf=requestAnimationFrame(()=>{
+      raf=0;
+      dot.style.transform=`translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
+      rx+=(x-rx)*.2;ry+=(y-ry)*.2;
+      ring.style.transform=`translate3d(${rx}px,${ry}px,0) translate3d(-50%,-50%,0)`;
+      address.style.transform=`translate3d(${x + 14}px,${y + 18}px,0)`;
+    });
+  },{passive:true});
+  window.__setHouseAddress=(text)=>{
+    address.textContent=text||'';
+    address.classList.toggle('is-visible',!!text);
+  };
+  document.querySelectorAll('a,button,.card,.feature,.dark-card,.contact-card,.quote').forEach(el=>{
+    el.addEventListener('pointerenter',()=>ring.classList.add('is-hover'));
+    el.addEventListener('pointerleave',()=>ring.classList.remove('is-hover'));
+  });
+}
+
+function initHouseInteractions(){
+  const overlay=document.getElementById('housesOverlay');
+  if(!overlay)return;
+
+  const addresses={
+    'house-1':'Газовиков 59',
+    'house-2':'Газовиков 60',
+    'house-3':'Газовиков 61',
+    'house-4':'Газовиков 62'
+  };
+  const houses=overlay.querySelectorAll('.house');
+  houses.forEach(house=>{
+    house.addEventListener('pointerenter',()=>{
+      document.querySelector('.cursor-ring')?.classList.add('is-hover');
+      window.__setHouseAddress?.(addresses[house.dataset.id]||'');
+    },{passive:true});
+    house.addEventListener('pointerleave',()=>{
+      document.querySelector('.cursor-ring')?.classList.remove('is-hover');
+      window.__setHouseAddress?.('');
+    },{passive:true});
+    house.addEventListener('click',()=>{
+      overlay.dispatchEvent(new CustomEvent('house:click',{
+        detail:{id:house.dataset.id,element:house}
+      }));
+    });
+  });
+}
+
+function bootMotion(){
+  if(motionReady)return;
+  if(!window.gsap || !window.ScrollTrigger)return;
+  motionReady=true;
+
+  const heroTitle=document.querySelector('.hero .kinetic-title');
+  if(heroTitle){
+    heroTitle.dataset.motionHeading='1';
+    splitHeroTitle(heroTitle);
+    gsap.set(heroTitle.querySelectorAll('.kinetic-letter'),{y:'125%',rotate:7,opacity:0});
+    animateHeading(heroTitle,.03);
+  }
+
+  initLenis();
+  initScrollAnimations();
+  initTilt();
+  initCursor();
+  animateActiveSection(location.hash ? location.hash.slice(1) : 'home');
+
+  window.addEventListener('resize',()=>ScrollTrigger.refresh());
+}
+
+function splitHeroTitle(el){
+  if(el.dataset.heroSplit)return;
+  buildKineticWords(el);
+  el.dataset.heroSplit='1';
+}
+
+window.addEventListener('DOMContentLoaded',()=>{
+  initHouseInteractions();
+  const hash=location.hash.replace('#','');
+  if(ids.includes(hash)&&hash!=='home')switchTab(hash);
+  const start=()=>{
+    if(window.gsap&&window.ScrollTrigger)bootMotion();
+    else setTimeout(start,120);
+  };
+  start();
+});
+</script>
+</body>
+</html>
